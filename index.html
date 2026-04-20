@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrace | Sustainability Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="brand-logo">Eco<span class="accent">Trace.</span></div>
+        <ul class="nav-links">
+            <li><a href="#dashboard" id="nav-dashboard">Overview</a></li>
+            <li><a href="#analytics" id="nav-analytics">Analytics</a></li>
+            <li><a href="#reports" id="nav-reports">Reports</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <header class="hero-section" id="dashboard-section">
+            <div class="hero-box">
+                <span class="badge">Environmental Intelligence</span>
+                <h1>Track your <span class="accent">carbon footprint</span> with clarity.</h1>
+                <p>Empowering organizations with real-time data governance to achieve zero-emission targets and cultivate a sustainable future.</p>
+                <div class="action-group">
+                    <button id="start-btn" class="btn-primary">Initialize Platform</button>
+                </div>
+                <p id="status-message" class="hidden-msg">Establishing secure connection to global nodes...</p>
+            </div>
+        </header>
+
+        <section id="analytics-section" class="grid-section" style="display: none;">
+            <div class="section-title">
+                <h2>Sustainability <span class="accent">Metrics</span></h2>
+            </div>
+            
+            <div class="interactive-calculator">
+                <h3>Impact Simulator</h3>
+                <p>Enter your weekly sustainability actions to dynamically calculate your environmental offset.</p>
+                <div class="calc-form">
+                    <div class="input-group">
+                        <label for="trees">Trees Planted (Saplings):</label>
+                        <input type="number" id="trees" placeholder="e.g., 5" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="flights">Short-Haul Flights Avoided:</label>
+                        <input type="number" id="flights" placeholder="e.g., 1" min="0">
+                    </div>
+                    <button id="calculate-btn" class="btn-secondary">Calculate Offset</button>
+                </div>
+                <p id="error-msg" class="error-text"></p>
+                <div id="result-display" class="hidden-result">
+                    <h4>Total Offset Achieved: <br><span id="co2-result" class="accent-large">0</span> <span class="unit">kg CO2e</span></h4>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-card">
+                    <h3>Emissions Data</h3>
+                    <p>Monitor Scope 1, 2, and 3 emissions across your entire supply chain seamlessly.</p>
+                </div>
+                <div class="grid-card">
+                    <h3>Resource Optimization</h3>
+                    <p>Track water usage and waste reduction to maximize operational efficiency globally.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reports-section" class="grid-section" style="display: none;">
+            <div class="section-title">
+                <h2>Generated <span class="accent">Reports</span></h2>
+            </div>
+            <div class="grid-container">
+                <div class="grid-card">
+                    <h3>Q1 2026 ESG Audit</h3>
+                    <p>Comprehensive overview of environmental and governance metrics for the first quarter.</p>
+                    <button class="btn-secondary outline" style="margin-top: 1.5rem;">Download PDF</button>
+                </div>
+                <div class="grid-card">
+                    <h3>Annual Carbon Analysis</h3>
+                    <p>Detailed breakdown of emissions verified by third-party compliance auditors.</p>
+                    <button class="btn-secondary outline" style="margin-top: 1.5rem;">Download PDF</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 EcoTrace. Cultivating a better tomorrow.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
